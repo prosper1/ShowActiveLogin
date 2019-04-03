@@ -2,19 +2,18 @@ import { AuthenticationService } from './../../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
  
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-profile',
+  templateUrl: './profile.page.html',
+  styleUrls: ['./profile.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class ProfilePage implements OnInit {
  
   constructor(private authService: AuthenticationService) { }
  
   ngOnInit() {
   }
  
-  login() {
-    this.authService.login();
+  logout() {
+    this.authService.logout();
   }
- 
 }
